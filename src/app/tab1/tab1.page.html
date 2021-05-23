@@ -7,24 +7,56 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-searchbar placeholder="Buscar">  </ion-searchbar>
+  <ion-searchbar placeholder="Buscar"> </ion-searchbar>
 
   <ion-list>
-    <ion-item lines="full">
-      <ion-thumbnail slot="start">
-        <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/w8BVC3qrCWCiTHRz4Rft12dtQF0.jpg">
-      </ion-thumbnail>
-      <ion-label class="ion-text-wrap">
-        <div>
-          <h1>Mortal Kombat (2021)</h1>
-          <p>15/04/2021 (BR) - 1h 50m</p>
-          <p>Ação, Fantasia, Aventura</p>
-        </div>
-      </ion-label>
-      <ion-chip color="success" outline>
-        <ion-label>76%</ion-label>
-      </ion-chip>
-    </ion-item>
+    <ion-item-sliding>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/w8BVC3qrCWCiTHRz4Rft12dtQF0.jpg">
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>Mortal Kombat (2021)</h1>
+            <p>15/04/2021 (BR) - 1h 50m</p>
+            <p>Ação, Fantasia, Aventura</p>
+          </div>
+        </ion-label>
+        <ion-chip color="success" outline>
+          <ion-label>76%</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option>
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/5BYyTmEqkYXIgdDPyEiAeAbhIsI.jpg">
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>Quem Matou Sara? (2021)</h1>
+            <p>40m</p>
+            <p>Drama, Crime, Mistério</p>
+          </div>
+        </ion-label>
+        <ion-chip color="success" outline>
+          <ion-label>78%</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option>
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
   </ion-list>
 
 </ion-content>
