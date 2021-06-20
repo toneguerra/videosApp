@@ -22,8 +22,6 @@ export class DadosFilmePage implements OnInit {
     this.filme = this.dadosService.pegarDados('filme');
     this.generos = this.dadosService.pegarDados('generos');
     console.log('filme enviado', this.filme );
-
-
   }
 
 }
