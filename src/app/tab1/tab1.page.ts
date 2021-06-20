@@ -25,13 +25,40 @@ export class Tab1Page {
       pagina: '/mortal-kombat'
     },
     {
+      nome: 'Falcão e o Soldado Invernal',
+      lancamento: '12/05/2021',
+      duracao: '50m',
+      classificacao: 78,
+      cartaz: 'https://www.themoviedb.org/t/p/w220_and_h330_face/oF9njYCN6lBdrsi6wfulcxTggvn.jpg',
+      generos: ['Ficção', 'Ação', 'Aventura', 'Guerra', 'Política'],
+      pagina: '/falcao-e-o-soldado-invernal'
+    },
+    {
+      nome: 'O Conto da Aia (2017)',
+      lancamento: '10/03/2017',
+      duracao: '50m',
+      classificacao: 82,
+      cartaz: 'https://www.themoviedb.org/t/p/w220_and_h330_face/2rK53k6Lg6IDqHM7xp8OTzzzpz7.jpg',
+      generos: ['Ficção', 'Drama'],
+      pagina: '/o-conto-da-aia'
+    },
+    {
       nome: 'Quem Matou Sara? (2021)',
       lancamento: '12/05/2021',
       duracao: '40m',
       classificacao: 78,
       cartaz: 'https://www.themoviedb.org/t/p/w220_and_h330_face/5BYyTmEqkYXIgdDPyEiAeAbhIsI.jpg',
       generos: ['Drama', 'Crime', 'Mistério'],
-      pagina: '/liga-justica'
+      pagina: '/quem-matou-sara'
+    },
+    {
+      nome: 'A Rainha do Fluxo',
+      lancamento: '12/06/2018',
+      duracao: '53m',
+      classificacao: 80,
+      cartaz: 'https://www.themoviedb.org/t/p/w220_and_h330_face/fuVuDYrs8sxvEolnYr0wCSvtyTi.jpg',
+      generos: ['Drama'],
+      pagina: '/a-rainha-do-fluxo'
     }
   ];
 
