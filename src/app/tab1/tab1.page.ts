@@ -19,7 +19,8 @@ export class Tab1Page {
       duracao: '1h 50m',
       classificacao: 76,
       cartaz: 'https://www.themoviedb.org/t/p/w220_and_h330_face/w8BVC3qrCWCiTHRz4Rft12dtQF0.jpg',
-      generos:['Ação', 'Fantasia', 'Aventura']
+      generos:['Ação', 'Fantasia', 'Aventura'],
+      pagina:'/mortal-kombat'
     },
     {
       nome:'Quem Matou Sara? (2021)',
@@ -27,7 +28,8 @@ export class Tab1Page {
       duracao:'40m',
       classificacao: 78,
       cartaz:'https://www.themoviedb.org/t/p/w220_and_h330_face/5BYyTmEqkYXIgdDPyEiAeAbhIsI.jpg',
-      generos:['Drama', 'Crime', 'Mistério']
+      generos:['Drama', 'Crime', 'Mistério'],
+      pagina:'/liga-justica'
     }
   ];
 
