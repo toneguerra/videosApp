@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
 import { IFilme } from '../models/iFilme.model';
+import { DadosService } from '../services/dados.service';
 
 @Component({
   selector: 'app-tab1',
@@ -19,21 +21,31 @@ export class Tab1Page {
       duracao: '1h 50m',
       classificacao: 76,
       cartaz: 'https://www.themoviedb.org/t/p/w220_and_h330_face/w8BVC3qrCWCiTHRz4Rft12dtQF0.jpg',
-      generos:['Ação', 'Fantasia', 'Aventura'],
-      pagina:'/mortal-kombat'
+      generos: ['Ação', 'Fantasia', 'Aventura'],
+      pagina: '/mortal-kombat'
     },
     {
-      nome:'Quem Matou Sara? (2021)',
-      lancamento:'12/05/2021',
-      duracao:'40m',
+      nome: 'Quem Matou Sara? (2021)',
+      lancamento: '12/05/2021',
+      duracao: '40m',
       classificacao: 78,
-      cartaz:'https://www.themoviedb.org/t/p/w220_and_h330_face/5BYyTmEqkYXIgdDPyEiAeAbhIsI.jpg',
-      generos:['Drama', 'Crime', 'Mistério'],
-      pagina:'/liga-justica'
+      cartaz: 'https://www.themoviedb.org/t/p/w220_and_h330_face/5BYyTmEqkYXIgdDPyEiAeAbhIsI.jpg',
+      generos: ['Drama', 'Crime', 'Mistério'],
+      pagina: '/liga-justica'
     }
   ];
 
-  constructor(public alertController: AlertController, public toastController: ToastController) {}
+  constructor(
+    public alertController: AlertController,
+    public toastController: ToastController,
+    public dadosService: DadosService,
+    public route: Router) { }
+
+
+    exibirFilme(filme: IFilme){
+      this.dadosService.guardarDados('filme', filme);
+      this.route.navigateByUrl('/dados-filme');
+    }
 
   async exibirAlertaFavorito() {
     const alert = await this.alertController.create({
@@ -64,7 +76,7 @@ export class Tab1Page {
       message: 'Filme adicionado aos favoritos.',
       duration: 2000,
       color: 'success',
-      position:'middle'
+      position: 'middle'
     });
     toast.present();
   }
